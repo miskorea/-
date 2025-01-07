@@ -3,38 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>고양이 춤</title>
+    <title>해킹 경고</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <style>
         body {
+            margin: 0;
+            height: 100vh;
+            background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+            background-color: #111;
+            color: #00FF00;
+            font-family: 'Orbitron', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            margin: 0;
+            flex-direction: column;
+            overflow: hidden;
         }
-        .container {
-            text-align: center;
-        }
-        img {
-            width: 300px;
-            animation: dance 1s infinite alternate;
-        }
-        @keyframes dance {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(20deg); }
-        }
+
         h1 {
-            font-size: 2rem;
-            color: #333;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: glitch 1s infinite;
+            position: relative;
         }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <!-- base64로 인코딩된 고양이 이미지 -->
-        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAP8AAgICAgICAg4KCQwICw4ODx0pLyA5Qf/xAAhEAACAAQDBAMBAQAAAAAAAAAAAQIDBAAFBhEHEiExBhJxFCJxFDJxM0JxFDHhBhRC/2gAIAQAAAgIDBQYDBAYDCwEAAAECBAgDBQQFEhMiE1FhByJxFDKxgRMisfAkM2LxwSNCwqIhFSOSFJM5Mk9iS6lC/zD/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoDEyJxBhExQeH/2gAIAQIBBAYDBQYDBwMDBAYFBAcDBREiEzFBEyJxFDKhwSJgBLFhsTLxw0LSsBHi/9oADAMBAQEBAQEBAQEBAQEAAAAAAAECBAUDBgcICQoJHxAxQYGRESEzIzNjYPD/2gAIAQEBAQEBAQEBAQEAAAAAAAECBAUBBQYICQoJREpEOx/9oADAMBAQEBAQEBAQEBAQEAAAAAAAECBAUDBgcICQoJHxAxQYGRESEzIzNjYPD/2gAIAQEBAQEBAQEBAQEAAAAAAAECBAUBBQYICQoJREpEOx/9oADAMBAQEBAQEBAQEBAQEAAAAAAAECBAUDBgcICQoJHxAxQYGRESEzIzNjYPD/2gAIAQEBAQEBAQEBAQEAAAAAAAECBAUBBQYICQoJREpEOx/9oADAMBAQEBAQEBAQEBAQEAAAAAAAECBAUDBgcICQoJHxAxQYGRESEzIzNjYPD/2gAIAQEBAQEBAQEBAQEAAAAAAAECBAUBBQYICQoJREpEOx/9oADAMBAQEBAQEBAQEBAQEAAAAAAAECBAUDBgcICQoJHxAxQYGRESEzIzNjYPD/2gAIAQEBAQEBAQEBAQEAAAAAAAECBAUBBQYICQoJREpEOx/9oADAMBAQEBAQEBAQEBAQEAAAAAAAECBAUDBgcICQoJHxAxQYGRESEzIzNjYPD/2gAIAQEBAQEBAQEBAQEAAAAAAAECBAUBBQYICQoJREpEOx" alt="춤추는 고양이">
-        <h1>바보</h1>
-    </div>
-</body>
-</html>
+
+        h1::before, h1::after {
+            content: "당신의
