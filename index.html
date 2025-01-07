@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고양이 춤</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        img {
+            width: 300px;
+            animation: dance 1s infinite alternate;
+        }
+        @keyframes dance {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(20deg); }
+        }
+        h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://placekitten.com/300/300" alt="춤추는 고양이">
+        <h1>바보</h1>
+    </div>
+</body>
+</html>
